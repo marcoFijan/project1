@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Activity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	
+	<div class="content">
+		<form method="POST" action="activityaddmessage.html">
+						<h2>Activity</h2>
+						<input type="text" name="activity" placeholder="Activity"><br>
+						<h2>Area Code</h2>
+						<input type="text" name="area_code" placeholder="Area code"><br>
+						<h2>Adress</h2>
+						<input type="text" name="adress" placeholder="Streetname + Number"><br>
+						<h2>Date</h2>
+						<input type="date" name="date" placeholder="date yyyy-mm-dd"/><br>
+						<h2>Time</h2>
+						<input type="time" name="time" placeholder="time"/>
+						<h2>Genre</h2>
+						<select>
+							<optgroup label="Studentlife">
+								<option value="clubs">Clubs</option>
+								<option value="beer">Beer</option>
+								<option value="studygroup">Studygroup</option>
+								<option value="school">School</option>
+								<option value="food">Food</option>
+							</optgroup>
+							<optgroup label="Relaxing">
+								<option value="forest">Forext</option>
+								<option value="nature">Nature</option>
+								<option value="reading">Reading</option>
+								<option value="music">Music</option>
+							</optgroup>
+							<optgroup label="Geeky">
+								<option value="tech">Tech</option>
+								<option value="gaming">Gaming</option>
+								<option value="tech">Comics</option>
+								<option value="movies">Movies</option>
+								<option value="series">Series</option>
+								<option value="anime">Anime</option>
+							</optgroup>							
+						</select> 
+						<h2>Activity Description</h2>
+						<textarea name="description" rows="5" placeholder="Enter here your activity description"></textarea><br>
+						
+						<h2>Choose your bank here</h2>
+						<h3 class="pay">To prevent misusage, you have to pay 1 euro to place your activity </h3>
+						<select>
+								<option value="abn">ABN</option>
+								<option value="amro">AMRO</option>
+								<option value="asn">ASN Bank</option>
+								<option value="Friesland bank">Friesland Bank</option>
+								<option value="ing">ING</option>	
+								<option value="rabo">Rabobank</option>	
+								<option value="regio">Regiobank</option>	
+								<option value="SNS">SNS Bank</option>	
+								<option value="triodos">Triodos Bank</option>
+								<option value="landschot">Van Lanschot Bankiers</option>	
+						</select> 
+						<input type="image" src="images/sendbutton.png" alt="Submit" class="sendbutton">
+				</form>
+				<div class="menuspace">
+				<h1></h1>
+				</div>
+		</div>
+		
+	</div>
+		
+	<div class="fixedheader">
+		<div class="backbutton2">
+			. 
+		</div>
+		<h1>New Activity</h1>
+	</div>
+
+	<div class="fixedfooter">
+		<div class="menuitem1">
+			<a href="index.html"><img class="menuicon" src="images/pinpoint2.png" alt="pinpointicon"></a>
+		</div>
+		<div class="menuitem2">
+			<a href="myactivities.html"><img class="menuicon" src="images/activityicon.png" alt="activity_icon"></a>
+		</div>
+		<div class="menuitem3">
+			<a href="newactivities.html"><img class="menuicon" src="images/addactivityicon.png" alt="add_activity_icon"></a>
+		</div>
+		<div class="menuitem4">
+			<a href="findactivity.html"><img class="menuicon" src="images/searchicon.png" alt="searchicon"></a>
+		</div>
+		<div class="menuitem5">
+			<a href="settings.html"><img class="menuicon" src="images/settingsicon.png" alt="settingsicon"></a>
+		</div>
+	</div>
+</body>
+</html>

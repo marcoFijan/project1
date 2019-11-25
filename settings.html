@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	
+	<div class="content">
+		<div class="info">
+			<div class="infoinput">
+				<h2>First name</h2>
+				<input type="text" name="name" placeholder="Marco">
+			</div>
+			<div class="infoinput">
+				<h2>Surname</h2>
+				<input type="text" name="name" placeholder="Fijan">
+			</div>
+			<div class="infoinput">
+				<h2>Your age</h2>
+				<input type="number" name="age" placeholder="22">
+			</div>
+			<div class="infoinput">
+				<h2>Language</h2>
+				<input type="text" name="name" placeholder="English">
+			</div>
+			<div class="infoinput2">
+				<h2>Notifications</h2>
+				<label class="switch">
+  					<input type="checkbox">
+ 					<span class="slider"></span>
+				</label>
+				</div>
+				<div class="infoinputinvis">
+				<h2>Language</h2>
+				<input type="text" name="name" placeholder="English">
+			</div>			
+				<script type="text/javascript">
+					function buttonclick2(){
+					document.getElementById('savemessage').innerHTML = "Your settings have been saved";
+					}
+				</script>
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="image" src="images/savebutton.png" onclick="buttonclick2()" alt="Save" class="sendbutton">
+				<div id="savemessage">
+					
+				</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<h1>Interests</h1>
+		<p class="intertext">Here you can add an interest. This can be anything you like: food, hobbies, sports, parties, drinks... you name it! This will be used to show more personalized available activities on the activitymap.</p>
+		<script type="text/javascript">
+		function buttonclick(){
+		var repeat, interests = [];
+
+		while(repeat !== 'no'){
+			interests.push(prompt('Which interest would you like to add to your list?'));
+			repeat = prompt('Would you like to keep adding activities to your list? yes / no');
+		}
+		document.getElementById('inter').innerHTML += interests + "<br />";
+	}
+	</script>
+	<input type="image" src="images/addinterestbutton.png" onclick="buttonclick()" alt="Add" class="searchbutton">
+		<div id="inter">
+			
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+
+	
+	<div class="fixedheader">
+		<div class="backbutton2">
+			. 
+		</div>
+		<h1>Settings</h1>
+	</div>
+	
+	<div class="fixedfooter">
+		<div class="menuitem1">
+			<a href="index.html"><img class="menuicon" src="images/pinpoint2.png" alt="pinpointicon"></a>
+		</div>
+		<div class="menuitem2">
+			<a href="myactivities.html"><img class="menuicon" src="images/activityicon.png" alt="activity_icon"></a>
+		</div>
+		<div class="menuitem3">
+			<a href="newactivities.html"><img class="menuicon" src="images/addactivityicon.png" alt="add_activity_icon"></a>
+		</div>
+		<div class="menuitem4">
+			<a href="findactivity.html"><img class="menuicon" src="images/searchicon.png" alt="searchicon"></a>
+		</div>
+		<div class="menuitem5">
+			<a href="settings.html"><img class="menuicon" src="images/settingsicon.png" alt="settingsicon"></a>
+		</div>
+	</div>
+</body>
+</html>

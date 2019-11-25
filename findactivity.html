@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Find Activities</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	
+	<div class="content">
+		<form method="POST" action="findactivityresults.html">
+						<h2>Search Activity</h2>
+						<input type="text" name="activity" placeholder="Search by name">
+						<h3>Search by date </h3>
+						<input type="date" name="date" placeholder="Search by date yyyy-mm-dd"/>
+						<h3>Search by genre</h3>
+						<select>
+							<optgroup label="Studentlife">
+								<option value="food">Food</option>
+								<option value="clubs">Clubs</option>
+								<option value="beer">Beer</option>
+								<option value="studygroup">Studygroup</option>
+								<option value="school">School</option>
+								
+							</optgroup>
+							<optgroup label="Relaxing">
+								<option value="forest">Forext</option>
+								<option value="nature">Nature</option>
+								<option value="reading">Reading</option>
+								<option value="music">Music</option>
+							</optgroup>
+							<optgroup label="Geeky">
+								<option value="tech">Tech</option>
+								<option value="gaming">Gaming</option>
+								<option value="tech">Comics</option>
+								<option value="movies">Movies</option>
+								<option value="series">Series</option>
+								<option value="anime">Anime</option>
+							</optgroup>							
+						</select> 
+						<br>
+						<br>
+						<input type="image" src="images/searchbutton.png" alt="Submit" class="searchbutton">
+				</form>
+	</div>
+		
+	<div class="fixedheader">
+		<div class="backbutton2">
+			. 
+		</div>
+		<h1>Find Activities</h1>
+	</div>
+	
+	<div class="fixedfooter">
+		<div class="menuitem1">
+			<a href="index.html"><img class="menuicon" src="images/pinpoint2.png" alt="pinpointicon"></a>
+		</div>
+		<div class="menuitem2">
+			<a href="myactivities.html"><img class="menuicon" src="images/activityicon.png" alt="activity_icon"></a>
+		</div>
+		<div class="menuitem3">
+			<a href="newactivities.html"><img class="menuicon" src="images/addactivityicon.png" alt="add_activity_icon"></a>
+		</div>
+		<div class="menuitem4">
+			<a href="findactivity.html"><img class="menuicon" src="images/searchicon.png" alt="searchicon"></a>
+		</div>
+		<div class="menuitem5">
+			<a href="settings.html"><img class="menuicon" src="images/settingsicon.png" alt="settingsicon"></a>
+		</div>
+	</div>
+</body>
+</html>
